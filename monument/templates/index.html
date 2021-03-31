@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>Search monument</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="image">select image</label>
+        <input type="file" name="imamge" id="image" accept="image/*">
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
